@@ -7,9 +7,11 @@ from main_window import *
 class FromEvernoteToTimeSaver(QtGui.QMainWindow):
 
     list_day_ui = []
-
+    
 
     def __init__(self, parent=None):
+        sys.setrecursionlimit(500)
+
         QtGui.QMainWindow.__init__(self, parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
