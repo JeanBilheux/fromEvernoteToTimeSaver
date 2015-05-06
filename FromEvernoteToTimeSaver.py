@@ -10,8 +10,6 @@ class FromEvernoteToTimeSaver(QtGui.QMainWindow):
     
 
     def __init__(self, parent=None):
-        sys.setrecursionlimit(500)
-
         QtGui.QMainWindow.__init__(self, parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
